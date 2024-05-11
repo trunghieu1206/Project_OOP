@@ -1,9 +1,9 @@
 package main_package.VirusStorage;
 
-public class Nucleocapsid {
+public class Capsid {
 	private int num;
 	
-	public Nucleocapsid(int num) {
+	public Capsid(int num) {
 		this.num = num;
 	}
 

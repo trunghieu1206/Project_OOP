@@ -2,24 +2,16 @@ package main_package.VirusStorage;
 
 public abstract class Virus {
 	private AcidNucleic a;
-	private Membrane m;
-	private Nucleocapsid n;
-	private Glycoprotein g;
+	private Capsid n;
 	
-	public Virus(AcidNucleic a, Membrane m, Nucleocapsid n, Glycoprotein g) {
+	public Virus(AcidNucleic a, Capsid n) {
 		this.a = a;
-		this.m = m;
 		this.n = n;
-		this.g = g;
 	}
 	
-	public void entryIntoHostCell() {
-		
-	}
+	public abstract void attachToHostCell();
 	
-	public void uncoat() {
-		
-	}
+	public abstract void entryIntoHostCell();
 	
 	public void replicateGene() {
 		
@@ -29,16 +21,12 @@ public abstract class Virus {
 		
 	}
 	
-	public void maturateAndRelease() {
-		
-	}
+	public abstract void release();
 	
 	public void infectToNewCells() {
 		
 	}
 	
-	public abstract void displayInformation();
-	
-	public abstract void attachToHostCell();
+	public abstract void displayInfectionProcess();
 	
 }
