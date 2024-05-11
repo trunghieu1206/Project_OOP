@@ -1,5 +1,5 @@
 package main_package.VirusStorage;
 
-public class VIrusWithLipidEnvelop {
+public class VirusWithLipidEnvelop {
 
 }
