@@ -91,7 +91,7 @@ public abstract class Virus {
 		System.out.println("2. Capsid (protein shell that protect the genetic material)");
 		if (virus instanceof VirusWithLipidEnvelop) {
 			System.out.println("3. Lipid envelop (the outermost layer of the virus that protects the genetic material in its life cycle when traveling between host cells)");
-			System.out.println("4. Spike glycoprotein (is embedded within the lipid envelope and s responsible for COVID-19) and plays a crucial role in viral attachment to host cells)");
+			System.out.println("4. Spike glycoprotein (is embedded within the lipid envelope and plays a crucial role in viral attachment to host cells)");
 		}
 	}
 }

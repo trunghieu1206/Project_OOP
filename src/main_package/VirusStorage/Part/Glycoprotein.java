@@ -4,7 +4,6 @@ public class Glycoprotein {
 	private int num;
 	
 	public Glycoprotein(String type, int num) {
-		this.type = type;
 		this.num = num;
 	}
 
