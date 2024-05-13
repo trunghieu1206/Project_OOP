@@ -2,7 +2,7 @@ package main_package.VirusStorage;
 
 public class AcidNucleic {
 	private String type;
-	private int strand;
+	private String strand;
 	private int num;
 	
 	public AcidNucleic(String type, int strand, int num) {
@@ -34,6 +34,5 @@ public class AcidNucleic {
 	public void setNum(int num) {
 		this.num = num;
 	}
-	
-	
+
 }

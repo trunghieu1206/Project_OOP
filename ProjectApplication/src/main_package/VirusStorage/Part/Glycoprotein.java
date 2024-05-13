@@ -1,17 +1,18 @@
 package main_package.VirusStorage;
 
-public class LipidEnvelop {
+public class Glycoprotein {
 	private int num;
 	
-	public LipidEnvelop(int num) {
+	public Glycoprotein(String type, int num) {
 		this.num = num;
 	}
-	
+
 	public int getNum() {
-		return this.num;
+		return num;
 	}
-	
+
 	public void setNum(int num) {
 		this.num = num;
 	}
+	
 }

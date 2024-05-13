@@ -1,8 +1,8 @@
 package main_package.VirusStorage;
 
 public abstract class VirusWithoutLipidEnvelop extends Virus {
-	public VirusWithoutLipidEnvelop(AcidNucleic a, Capsid c) {
-		super(a, c);
+	public VirusWithoutLipidEnvelop(AcidNucleic a, Capsid c, String disease, int year, String origin) {
+		super(a, c, disease, year, origin);
 	}
 	
 	public void attachToHostCell() {
@@ -14,6 +14,10 @@ public abstract class VirusWithoutLipidEnvelop extends Virus {
 		System.out.println("After the newly created vesicle is engulfed into the host cell, the viral Acid Nucleic is released and separated from the Capsid");
 		c.setNum(0);
 		System.out.println("\n");
+	}
+
+	public void replicateGene() {
+		super.replicateGene();
 	}
 	
 	public void release() {
