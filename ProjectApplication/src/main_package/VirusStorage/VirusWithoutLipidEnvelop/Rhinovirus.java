@@ -1,7 +1,9 @@
+
 package main_package.VirusStorage.VirusWithoutLipidEnvelop;
 
 import main_package.VirusStorage.Part.AcidNucleic;
 import main_package.VirusStorage.Part.Capsid;
+
 
 public class Rhinovirus extends VirusWithoutLipidEnvelop{
     public Rhinovirus(AcidNucleic a, Capsid c, String disease, int year, String origin) {

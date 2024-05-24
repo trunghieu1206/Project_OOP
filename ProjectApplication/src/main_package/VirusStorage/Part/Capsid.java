@@ -1,4 +1,7 @@
+
 package main_package.VirusStorage.Part;
+
+
 
 public class Capsid {
 	private int num;
