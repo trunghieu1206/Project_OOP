@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class VirusWithLiquidEnvelop extends JFrame{
+public class VirusWithoutLipidEnvelopGUI extends JFrame{
 
     JPanel createCenter(){
         JPanel center = new JPanel();
@@ -31,9 +31,9 @@ public class VirusWithLiquidEnvelop extends JFrame{
     JPanel createHeader(){
         JPanel header = new JPanel();
         header.setLayout(new BoxLayout(header, BoxLayout.X_AXIS));
-        JLabel title = new JLabel("Virus With Liquid Envelop");
+        JLabel title = new JLabel("Virus Without Lipid Envelop");
         title.setFont(new Font(title.getFont().getName(), Font.PLAIN, 40));
-        title.setForeground(Color.CYAN);
+        title.setForeground(Color.gray);
 
         header.add(Box.createRigidArea(new Dimension(10,10)));
         header.add(title);
@@ -49,6 +49,7 @@ public class VirusWithLiquidEnvelop extends JFrame{
         returnButton.setLayout(new BoxLayout(returnButton, BoxLayout.X_AXIS));
         JButton button = new JButton("Return");
         button.addActionListener(btnListener);
+        // button.setBounds(250, 300, 100, 50);
         button.setSize(100,50);
 
         returnButton.add(Box.createRigidArea(new Dimension(260,50)));
@@ -59,18 +60,18 @@ public class VirusWithLiquidEnvelop extends JFrame{
         return returnButton;
     }
 
-    public VirusWithLiquidEnvelop(){
+    public VirusWithoutLipidEnvelopGUI(){
 
         // Container cp = getContentPane();
         // cp.setLayout(new BorderLayout());
         // cp.add(createCenter(), BorderLayout.CENTER);
         // cp.add(createHeader(), BorderLayout.NORTH);
-
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         this.setLayout(new BorderLayout());
-        this.add(createReturnButton(), BorderLayout.SOUTH);
-        this.add(createCenter(), BorderLayout.CENTER);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.add(createHeader(), BorderLayout.NORTH);
+        this.add(createCenter(), BorderLayout.CENTER);
+        this.add(createReturnButton(), BorderLayout.SOUTH);
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
@@ -81,12 +82,13 @@ public class VirusWithLiquidEnvelop extends JFrame{
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("Return")){
-                new ChooseTypeOfVirussScreen();
+            	dispose();
+                new ChooseTypeOfVirusScreen();
             }
         }
     }
 
     public static void main(String[] args) {
-        new VirusWithLiquidEnvelop();
+        new VirusWithoutLipidEnvelopGUI();
     }
 }

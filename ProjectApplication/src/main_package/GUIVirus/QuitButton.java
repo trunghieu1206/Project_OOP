@@ -1,4 +1,4 @@
-package main_package.GUIVIrus;
+package main_package.GUIVirus;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,6 +31,7 @@ public class QuitButton extends JFrame {
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("NO")){
+            	dispose();
                 new MainScreen();
             }
             else{

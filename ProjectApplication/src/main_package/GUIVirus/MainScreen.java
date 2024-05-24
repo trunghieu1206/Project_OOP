@@ -1,4 +1,4 @@
-package main_package.GUIVIrus;
+package main_package.GUIVirus;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -121,9 +121,11 @@ public class MainScreen extends JFrame{
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("Choose Type Of Virus")){
-                new ChooseTypeOfVirussScreen();
+            	dispose();
+                new ChooseTypeOfVirusScreen();
             }
             else if(button.equals("Quit")){
+            	dispose();
                 new QuitButton();
             }
         }
