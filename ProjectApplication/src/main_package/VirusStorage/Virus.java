@@ -1,5 +1,10 @@
 package main_package.VirusStorage;
 
+
+import main_package.VirusStorage.Part.AcidNucleic;
+import main_package.VirusStorage.Part.Capsid;
+import main_package.VirusStorage.VirusWithLipidEnvelop.VirusWithLipidEnvelop;
+
 public abstract class Virus {
 	protected AcidNucleic a;
 	protected Capsid c;
@@ -80,12 +85,16 @@ public abstract class Virus {
 	
 	public abstract void displayInfectionProcess();
 	
-	public <T> void displayInformation(T virus) {
+
+	public <T extends Virus> void displayInformation(T virus) {
+
 		System.out.println("It is the virus responsible for " + virus.getDisease());
 		System.out.println("It was first identified in " + virus.getYear() + " in " + virus.getOrigin() + ".");
 	}
 
-	public <T> void displayStructure(T virus) {
+
+	public <T extends Virus> void displayStructure(T virus) {
+
 		System.out.println("The structure of " + virus.getClass().getName() + ": ");
 		System.out.println("1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
 		System.out.println("2. Capsid (protein shell that protect the genetic material)");

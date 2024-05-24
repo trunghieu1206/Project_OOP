@@ -1,4 +1,9 @@
-package main_package.VirusStorage;
+
+package main_package.VirusStorage.VirusWithoutLipidEnvelop;
+
+import main_package.VirusStorage.Part.AcidNucleic;
+import main_package.VirusStorage.Part.Capsid;
+
 
 public class Poliovirus extends VirusWithoutLipidEnvelop{
     public Poliovirus(AcidNucleic a, Capsid c, String disease, int year, String origin) {

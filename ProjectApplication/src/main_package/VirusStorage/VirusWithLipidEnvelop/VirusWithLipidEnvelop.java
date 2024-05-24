@@ -1,4 +1,12 @@
-package main_package.VirusStorage;
+
+package main_package.VirusStorage.VirusWithLipidEnvelop;
+
+import main_package.VirusStorage.Virus;
+import main_package.VirusStorage.Part.AcidNucleic;
+import main_package.VirusStorage.Part.Capsid;
+import main_package.VirusStorage.Part.Glycoprotein;
+import main_package.VirusStorage.Part.LipidEnvelop;
+
 
 public abstract class VirusWithLipidEnvelop extends Virus{
 	protected LipidEnvelop l;
