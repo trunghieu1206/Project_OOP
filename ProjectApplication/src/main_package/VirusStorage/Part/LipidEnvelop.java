@@ -1,4 +1,6 @@
+
 package main_package.VirusStorage.Part;
+
 
 public class LipidEnvelop {
 	private int num;

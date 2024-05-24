@@ -1,8 +1,10 @@
+
 package main_package.VirusStorage.VirusWithoutLipidEnvelop;
 
 import main_package.VirusStorage.Virus;
 import main_package.VirusStorage.Part.AcidNucleic;
 import main_package.VirusStorage.Part.Capsid;
+
 
 public abstract class VirusWithoutLipidEnvelop extends Virus {
 	public VirusWithoutLipidEnvelop(AcidNucleic a, Capsid c, String disease, int year, String origin) {

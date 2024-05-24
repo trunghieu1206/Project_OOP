@@ -2,9 +2,9 @@ package main_package;
 
 import javax.swing.*;
 
-public class main_program {
+public class App {
 	public static void main(String[] args) {
-		System.out.println("Hello from individual-hieu branch");
+		System.out.println("hello");
 		
 	}
 }
