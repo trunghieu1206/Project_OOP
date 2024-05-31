@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.22110552763819097" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="14.0" text="Confirmation" textFill="#090de1">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button layoutX="218.0" layoutY="168.0" mnemonicParsing="false" onAction="#ConfirmNo" prefHeight="31.0" prefWidth="163.0" text="No" />
+            <Button alignment="CENTER" layoutX="218.0" layoutY="79.0" mnemonicParsing="false" onAction="#ConfirmYes" prefHeight="31.0" prefWidth="163.0" text="Yes" />
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
