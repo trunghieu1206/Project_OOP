@@ -19,7 +19,7 @@ public class ChooseTypeOfVirusFX {
     @FXML
     void btnVirusLipidEnvelop(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/VirusWithLipidEnvelopFX.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/VirusWithLipidEnvelopFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             VirusWithLipidEnvelopFX virusWithLipidEnvelopFX = new VirusWithLipidEnvelopFX();
             fxmlLoader.setController(virusWithLipidEnvelopFX);
@@ -38,7 +38,7 @@ public class ChooseTypeOfVirusFX {
     @FXML
     void btnVirusWithoutLipidEnvelop(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/VirusWithoutLipidEnvelopFX.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/VirusWithoutLipidEnvelopFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             VirusWithoutLipidEnvelopFX virusWithoutLipidEnvelopFX = new VirusWithoutLipidEnvelopFX();
             fxmlLoader.setController(virusWithoutLipidEnvelopFX);
@@ -56,7 +56,7 @@ public class ChooseTypeOfVirusFX {
     @FXML
     void returnMainMenu(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/MainScreenFX.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/MainScreenFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             MenuScreenFX menuScreenFX = new MenuScreenFX();
             fxmlLoader.setController(menuScreenFX);

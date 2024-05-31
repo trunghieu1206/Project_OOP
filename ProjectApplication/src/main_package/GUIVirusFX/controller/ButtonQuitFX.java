@@ -20,7 +20,7 @@ public class ButtonQuitFX {
     @FXML
     void ConfirmNo(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/MainScreenFX.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/MainScreenFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             MenuScreenFX menuScreenFX = new MenuScreenFX();
             fxmlLoader.setController(menuScreenFX);

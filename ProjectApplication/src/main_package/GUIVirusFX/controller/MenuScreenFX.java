@@ -20,7 +20,7 @@ public class MenuScreenFX {
     @FXML
     void btnChooseTypeOfVirus(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/ChooseTypeVirus.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/ChooseTypeVirus.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             ChooseTypeOfVirusFX chooseTypeOfVirusFX = new ChooseTypeOfVirusFX();
             fxmlLoader.setController(chooseTypeOfVirusFX);
@@ -39,7 +39,7 @@ public class MenuScreenFX {
     @FXML
     void QuitButton(ActionEvent event) {
         try{
-            final String PATH = "main_package/GUIVirusFX/view/QuitButtonFX.fxml";
+            final String PATH = "/main_package/GUIVirusFX/view/QuitButtonFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             ButtonQuitFX buttonQuitFX = new ButtonQuitFX();
             fxmlLoader.setController(buttonQuitFX);
