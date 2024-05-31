@@ -10,7 +10,7 @@ import main_package.GUIVirusFX.controller.MenuScreenFX;
 public class MainFX extends Application {
     @Override
     public void start(Stage stage) throws Exception{
-        final String PATH = "main_packet/GUIVirusFX/view/MainScreenFX.fxml";
+        final String PATH = "main_package/GUIVirusFX/view/MainScreenFX.fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
         MenuScreenFX menuScreenFX = new MenuScreenFX();
         fxmlLoader.setController(menuScreenFX);
