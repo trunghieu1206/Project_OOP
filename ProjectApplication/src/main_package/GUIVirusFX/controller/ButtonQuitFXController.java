@@ -41,6 +41,5 @@ public class ButtonQuitFXController {
     void ConfirmYes(ActionEvent event) {
         Platform.exit();
     }
-
 }
 
