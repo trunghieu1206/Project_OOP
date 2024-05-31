@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.20100502512562815" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="14.0" text="CHOOSE TYPE OF VIRUS" textFill="#090de1">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button layoutX="208.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnVirusWithoutLipidEnvelop" prefHeight="31.0" prefWidth="182.0" text="Virus Without Lipid Envelop" />
+            <Button layoutX="209.0" layoutY="38.0" mnemonicParsing="false" onAction="#btnVirusLipidEnvelop" prefHeight="31.0" prefWidth="182.0" text="Virus With Lipid Envelop" />
+            <Button layoutX="209.0" layoutY="181.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="31.0" prefWidth="182.0" text="Return" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
