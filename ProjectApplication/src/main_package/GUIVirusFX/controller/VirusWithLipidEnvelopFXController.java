@@ -5,49 +5,33 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.scene.Node;
 
-public class ChooseTypeOfVirusFX {
+public class VirusWithLipidEnvelopFXController {
+	
+	
 
+
+	
     @FXML
-    void Colorbutton(ActionEvent event) {
+    void ColorButton(ActionEvent event) {
 
     }
-
+    
     @FXML
-    void btnVirusLipidEnvelop(ActionEvent event) {
-        try{
-            final String PATH = "/main_package/GUIVirusFX/view/VirusWithLipidEnvelopFX.fxml";
+    void returnBtnPressed(ActionEvent event) {
+    	try{
+            final String PATH = "/main_package/GUIVirusFX/view/ChooseTypeVirus.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            
-            fxmlLoader.setController(new VirusWithLipidEnvelopFXController());
+            fxmlLoader.setController(new ChooseTypeOfVirusFX());
             Parent root = fxmlLoader.load();
             
-            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Virus With Lipid Envelop");
-            stage.show();
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void btnVirusWithoutLipidEnvelop(ActionEvent event) {
-        try{
-            final String PATH = "/main_package/GUIVirusFX/view/VirusWithoutLipidEnvelopFX.fxml";
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            
-            fxmlLoader.setController(new VirusWithoutLipidEnvelopFXController());
-            Parent root = fxmlLoader.load();
-            
-            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Virus Without Lipid Envelop");
+            stage.setTitle("Choose Type of Virus");
             stage.show();
         }
         catch(IOException e){
@@ -75,3 +59,4 @@ public class ChooseTypeOfVirusFX {
     }
 
 }
+

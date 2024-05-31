@@ -8,27 +8,27 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.Node;
 
-
-public class MenuScreenFX {
+public class MenuScreenFXController {
 
     @FXML
     void button1(ActionEvent event) {
 
     }
+    
 
     @FXML
     void btnChooseTypeOfVirus(ActionEvent event) {
         try{
             final String PATH = "/main_package/GUIVirusFX/view/ChooseTypeVirus.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            ChooseTypeOfVirusFX chooseTypeOfVirusFX = new ChooseTypeOfVirusFX();
-            fxmlLoader.setController(chooseTypeOfVirusFX);
+            fxmlLoader.setController(new ChooseTypeOfVirusFX());
             Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.close();
-            stage.setScene(scene);
+            
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Choose Type of Virus");
             stage.show();
         }
         catch(IOException e){
@@ -41,13 +41,13 @@ public class MenuScreenFX {
         try{
             final String PATH = "/main_package/GUIVirusFX/view/QuitButtonFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            ButtonQuitFX buttonQuitFX = new ButtonQuitFX();
-            fxmlLoader.setController(buttonQuitFX);
+            fxmlLoader.setController(new ButtonQuitFXController());
+            
             Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.close();
-            stage.setScene(scene);
+            
+            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Quit");
             stage.show();
         }
         catch(IOException e){
@@ -56,4 +56,3 @@ public class MenuScreenFX {
     }
 
 }
-

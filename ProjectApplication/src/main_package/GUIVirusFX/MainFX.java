@@ -5,19 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import main_package.GUIVirusFX.controller.MenuScreenFX;
+import main_package.GUIVirusFX.controller.MenuScreenFXController;
 
 public class MainFX extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         final String PATH = "/main_package/GUIVirusFX/view/MainScreenFX.fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-        MenuScreenFX menuScreenFX = new MenuScreenFX();
-        fxmlLoader.setController(menuScreenFX);
+        MenuScreenFXController menuScreenFXController = new MenuScreenFXController();
+        fxmlLoader.setController(menuScreenFXController);
         Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root);
-        stage.close();
-        stage.setScene(scene);
+        
+        stage.setTitle("Main Screen");
+        stage.setScene(new Scene(root));
         stage.show();
     }
     public static void main(String[] args) {

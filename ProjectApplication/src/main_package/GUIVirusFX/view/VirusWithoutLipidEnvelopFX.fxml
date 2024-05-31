@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="160.0">
          <children>
@@ -36,7 +36,8 @@
             </GridPane>
             <AnchorPane layoutY="256.0" prefHeight="65.0" prefWidth="600.0">
                <children>
-                  <Button layoutX="28.0" layoutY="4.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="39.0" prefWidth="76.0" text="Return" />
+                  <Button layoutX="186.0" layoutY="31.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="39.0" prefWidth="134.0" text="Return to Main Menu" />
+                  <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="39.0" prefWidth="141.0" text="Return" />
                </children>
             </AnchorPane>
          </children>

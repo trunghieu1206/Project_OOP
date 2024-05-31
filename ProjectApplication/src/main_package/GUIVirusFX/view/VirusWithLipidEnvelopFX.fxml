@@ -5,8 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="160.0">
          <children>
@@ -35,9 +34,10 @@
                   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus2" GridPane.columnIndex="1" />
                </children>
             </GridPane>
-            <AnchorPane layoutY="256.0" prefHeight="65.0" prefWidth="600.0">
+            <AnchorPane layoutY="256.0" prefHeight="60.0" prefWidth="600.0">
                <children>
-                  <Button layoutX="28.0" layoutY="4.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="39.0" prefWidth="76.0" text="Return" />
+                  <Button layoutX="185.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="39.0" prefWidth="141.0" text="Return to Main menu" />
+                  <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="39.0" prefWidth="141.0" text="Return" />
                </children>
             </AnchorPane>
          </children>
