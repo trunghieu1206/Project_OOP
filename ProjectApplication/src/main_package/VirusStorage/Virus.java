@@ -85,17 +85,18 @@ public abstract class Virus {
 	
 	public abstract void displayInfectionProcess();
 	
-
-	public <T extends Virus> void displayInformation(T virus) {
+	
+	public void displayInformation(Virus virus) {
+		
 
 		System.out.println("It is the virus responsible for " + virus.getDisease());
 		System.out.println("It was first identified in " + virus.getYear() + " in " + virus.getOrigin() + ".");
 	}
 
 
-	public <T extends Virus> void displayStructure(T virus) {
+	public void displayStructure(Virus virus) {
 
-		System.out.println("The structure of " + virus.getClass().getName() + ": ");
+		System.out.println("The structure of " + virus.getClass().getSimpleName() + ": ");
 		System.out.println("1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
 		System.out.println("2. Capsid (protein shell that protect the genetic material)");
 		if (virus instanceof VirusWithLipidEnvelop) {

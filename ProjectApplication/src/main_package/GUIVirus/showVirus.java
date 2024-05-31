@@ -1,12 +1,12 @@
-package main_package.GUIVIrus;
+package main_package.GUIVirus;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
+import main_package.VirusStorage.VirusWithLipidEnvelop.*;
+import main_package.VirusStorage.Part.*;
+import main_package.VirusStorage.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.*;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -15,23 +15,44 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class VirusWithoutLiquidEnvelop extends JFrame{
-
-    JPanel createCenter(){
+public abstract class showVirus extends JFrame{
+	
+	JPanel createCenter(){
+		ButtonListener btnListener = new ButtonListener();
+		
+		
+		JFrame.setDefaultLookAndFeelDecorated(true);
         JPanel center = new JPanel();
-        center.setLayout(new GridLayout(2,2,2,2));
-
-        for(int i=0; i<4; i++){
-            JButton button = new JButton("Hello");
-            center.add(button);
-        }
+        
+        
+        center.setLayout(new BoxLayout(center, BoxLayout.Y_AXIS));
+        center.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        
+        
+        JButton showInformationbtn = new JButton("Show virus information");
+        showInformationbtn.addActionListener(btnListener);
+        
+        
+        JButton showStructurebtn = new JButton("Show structure of virus");
+        showStructurebtn.addActionListener(btnListener);
+        
+        JButton viewInfectionMechanismbtn = new JButton("Show infection mechanism of virus");
+        viewInfectionMechanismbtn.addActionListener(btnListener);
+        
+        center.add(showInformationbtn);
+        center.add(showStructurebtn);
+        center.add(viewInfectionMechanismbtn);
+       
         return center;
+        
     }
 
     JPanel createHeader(){
         JPanel header = new JPanel();
         header.setLayout(new BoxLayout(header, BoxLayout.X_AXIS));
-        JLabel title = new JLabel("Virus Without Liquid Envelop");
+        
+        JLabel title = new JLabel(this.getClass().getSimpleName().substring(4));
         title.setFont(new Font(title.getFont().getName(), Font.PLAIN, 40));
         title.setForeground(Color.CYAN);
 
@@ -49,7 +70,6 @@ public class VirusWithoutLiquidEnvelop extends JFrame{
         returnButton.setLayout(new BoxLayout(returnButton, BoxLayout.X_AXIS));
         JButton button = new JButton("Return");
         button.addActionListener(btnListener);
-        // button.setBounds(250, 300, 100, 50);
         button.setSize(100,50);
 
         returnButton.add(Box.createRigidArea(new Dimension(260,50)));
@@ -59,35 +79,28 @@ public class VirusWithoutLiquidEnvelop extends JFrame{
 
         return returnButton;
     }
-
-    public VirusWithoutLiquidEnvelop(){
-
-        // Container cp = getContentPane();
-        // cp.setLayout(new BorderLayout());
-        // cp.add(createCenter(), BorderLayout.CENTER);
-        // cp.add(createHeader(), BorderLayout.NORTH);
-        
+	
+	public showVirus() {
+    	
+    	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout());
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.add(createHeader(), BorderLayout.NORTH);
-        this.add(createCenter(), BorderLayout.CENTER);
         this.add(createReturnButton(), BorderLayout.SOUTH);
-        this.setSize(600, 400);
+        this.add(createCenter(), BorderLayout.CENTER);
+        this.add(createHeader(), BorderLayout.NORTH);
+        this.setSize(400, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
-    }
-
-    private class ButtonListener implements ActionListener{
+	}
+	
+	private class ButtonListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("Return")){
-                new ChooseTypeOfVirussScreen();
+            	dispose();
+                new VirusWithLipidEnvelopGUI();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        new VirusWithoutLiquidEnvelop();
-    }
+	
+	}
 }

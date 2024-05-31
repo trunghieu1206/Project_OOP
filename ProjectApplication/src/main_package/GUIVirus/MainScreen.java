@@ -1,4 +1,4 @@
-package main_package.GUIVIrus;
+package main_package.GUIVirus;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,10 +12,18 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;;
+import javax.swing.JPanel;
+
+import main_package.VirusStorage.Part.AcidNucleic;
+import main_package.VirusStorage.Part.Capsid;
+import main_package.VirusStorage.Part.Glycoprotein;
+import main_package.VirusStorage.Part.LipidEnvelop;
+import main_package.VirusStorage.VirusWithLipidEnvelop.HIV;
+import main_package.VirusStorage.*;
+import main_package.VirusStorage.VirusWithLipidEnvelop.*;
+import main_package.VirusStorage.VirusWithoutLipidEnvelop.*;
 
 public class MainScreen extends JFrame{
-    //private Virus virus;
 
     JPanel createNorth(){
         JPanel north = new JPanel();
@@ -121,15 +129,18 @@ public class MainScreen extends JFrame{
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("Choose Type Of Virus")){
-                new ChooseTypeOfVirussScreen();
+            	dispose();
+                new ChooseTypeOfVirusScreen();
             }
             else if(button.equals("Quit")){
+            	dispose();
                 new QuitButton();
             }
         }
     }
 
     public static void main(String[] args) {
+    	    	
         new MainScreen();
     }
 }

@@ -1,10 +1,10 @@
 package main_package;
 
 import javax.swing.*;
+import main_package.GUIVirus.*;
 
 public class App {
-	public static void main(String[] args) {
-		System.out.println("hello");
-		
+	public static void main(String[] args) {		
+		new MainScreen();
 	}
 }

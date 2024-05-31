@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class ChooseTypeOfVirussScreen extends JFrame{
-    public ChooseTypeOfVirussScreen(){
+public class ChooseTypeOfVirusScreen extends JFrame{
+    public ChooseTypeOfVirusScreen(){
         ButtonListener btnListener = new ButtonListener();
         // this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-        JButton button1 = new JButton("Virus With Liquid Envelop");
+        JButton button1 = new JButton("Virus With Lipid Envelop");
         button1.setBounds(200, 50 , 200, 50);
         button1.addActionListener(btnListener);
-        JButton button2 = new JButton("Virus Without Liquid Envelop");
+        JButton button2 = new JButton("Virus Without Lipid Envelop");
         button2.setBounds(200, 150, 200, 50);
         button2.addActionListener(btnListener);
         JButton button3 = new JButton("Return");
@@ -36,17 +36,20 @@ public class ChooseTypeOfVirussScreen extends JFrame{
         public void actionPerformed(ActionEvent e){
             String button = e.getActionCommand();
             if(button.equals("Return")){
+            	dispose();
                 new MainScreen();
             }
-            else if(button.equals("Virus With Liquid Envelop")){
-                new VirusWithLiquidEnvelop();
+            else if(button.equals("Virus With Lipid Envelop")){
+            	dispose();
+                new VirusWithLipidEnvelopGUI();
             }
-            else if(button.equals("Virus Without Liquid Envelop")){
-                new VirusWithoutLiquidEnvelop();
+            else if(button.equals("Virus Without Lipid Envelop")){
+            	dispose();
+                new VirusWithoutLipidEnvelopGUI();
             }
         }
     }
     public static void main(String[] args) {
-        new ChooseTypeOfVirussScreen();
+        new ChooseTypeOfVirusScreen();
     }
 }
