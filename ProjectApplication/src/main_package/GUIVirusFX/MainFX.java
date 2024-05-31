@@ -1,12 +1,13 @@
-package main_package.GUIVirusFX.controller;
+package main_package.GUIVirusFX;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import main_package.GUIVirusFX.controller.MenuScreenFX;
 
-public class MainScreenFX extends Application {
+public class MainFX extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         final String PATH = "main_packet/GUIVirusFX/view/MainScreenFX.fxml";
