@@ -9,7 +9,7 @@
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="160.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="600.0" text="Virus With Liquid Envelop" textFill="#090de1">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="600.0" text="Virus With Lipid Envelop" textFill="#090de1">
                <font>
                   <Font size="40.0" />
                </font>
