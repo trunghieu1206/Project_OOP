@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
-public class ChooseTypeOfVirusFX {
+public class ChooseTypeOfVirusFXController {
 
     @FXML
     void Colorbutton(ActionEvent event) {
