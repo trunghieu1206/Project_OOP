@@ -13,8 +13,21 @@ import javafx.scene.Node;
 public class MenuScreenFXController {
 
     @FXML
-    void button1(ActionEvent event) {
-
+    void btnHelpPressed(ActionEvent event) {
+        try{
+            final String PATH = "/main_package/GUIVirusFX/view/HelpMenu.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
+            fxmlLoader.setController(new HelpMenuController());
+            Parent root = fxmlLoader.load();
+            
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Choose Type of Virus");
+            stage.show();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
     
 
