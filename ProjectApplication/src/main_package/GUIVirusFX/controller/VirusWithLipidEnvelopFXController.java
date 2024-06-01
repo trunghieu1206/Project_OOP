@@ -1,3 +1,4 @@
+
 package main_package.GUIVirusFX.controller;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ import main_package.VirusStorage.Part.AcidNucleic;
 import main_package.VirusStorage.Part.Capsid;
 import main_package.VirusStorage.Part.Glycoprotein;
 import main_package.VirusStorage.Part.LipidEnvelop;
-import main_package.VirusStorage.VirusWithLipidEnvelop.HIV;
+import main_package.VirusStorage.VirusWithLipidEnvelop.*;
 
 public class VirusWithLipidEnvelopFXController {
 	
@@ -33,12 +34,12 @@ public class VirusWithLipidEnvelopFXController {
     void hivBtnPressed(ActionEvent event) {
     	// initialize HIV
     	LipidEnvelop l = new LipidEnvelop(1);
-    	Glycoprotein g = new Glycoprotein("a type", 1);
-    	AcidNucleic a = new AcidNucleic("a type", "a strand", 1);
+    	Glycoprotein g = new Glycoprotein("gp120, gp41", 1);
+    	AcidNucleic a = new AcidNucleic("RNA", "single", 2);
     	Capsid c = new Capsid(1);
-    	String disease = "disease";
-    	int year = 2000;
-    	String origin = "place";
+    	String disease = "HIV-AIDS";
+    	int year = 1981;
+    	String origin = "USA";
     	HIV newVirus = new HIV(l, g, a, c, disease, year, origin);
     	//
     	
@@ -61,17 +62,89 @@ public class VirusWithLipidEnvelopFXController {
     
     @FXML
     void hepatitisbBtnPressed(ActionEvent event) {
+    	// initialize heptatitisB
+    	LipidEnvelop l = new LipidEnvelop(1);
+    	Glycoprotein g = new Glycoprotein("HBsAg", 1);
+    	AcidNucleic a = new AcidNucleic("DNA", "double", 1);
+    	Capsid c = new Capsid(1);
+    	String disease = "Hepatitis B";
+    	int year = 1885;
+    	String origin = "Germany";
+    	HepatitisB newVirus = new HepatitisB(l, g, a, c, disease, year, origin);
+    	//
     	
+    	try{
+            final String PATH = "/main_package/GUIVirusFX/view/SpecificVirusView.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
+            fxmlLoader.setController(new SpecificVirusViewController(newVirus));
+            Parent root = fxmlLoader.load();
+            
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Showing Virus Information");
+            stage.show();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
     
     @FXML
     void flavivirusBtnPressed(ActionEvent event) {
+    	// initialize flavivirus
+    	LipidEnvelop l = new LipidEnvelop(1);
+    	Glycoprotein g = new Glycoprotein("E", 1);
+    	AcidNucleic a = new AcidNucleic("RNA", "single", 1);
+    	Capsid c = new Capsid(1);
+    	String disease = "Yellow fever, Zika, West Nile...";
+    	int year = 1937;
+    	String origin = "Uganda";
+    	Flavivirus newVirus = new Flavivirus(l, g, a, c, disease, year, origin);
+    	//
     	
+    	try{
+            final String PATH = "/main_package/GUIVirusFX/view/SpecificVirusView.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
+            fxmlLoader.setController(new SpecificVirusViewController(newVirus));
+            Parent root = fxmlLoader.load();
+            
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Showing Virus Information");
+            stage.show();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
     
     @FXML
     void sarscov2BtnPressed(ActionEvent event) {
+    	// initialize sarscov2
+    	LipidEnvelop l = new LipidEnvelop(1);
+    	Glycoprotein g = new Glycoprotein("s1, s2", 1);
+    	AcidNucleic a = new AcidNucleic("RNA", "single", 1);
+    	Capsid c = new Capsid(1);
+    	String disease = "Covid19";
+    	int year = 2019;
+    	String origin = "China";
+    	SarsCov2 newVirus = new SarsCov2(l, g, a, c, disease, year, origin);
+    	//
     	
+    	try{
+            final String PATH = "/main_package/GUIVirusFX/view/SpecificVirusView.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
+            fxmlLoader.setController(new SpecificVirusViewController(newVirus));
+            Parent root = fxmlLoader.load();
+            
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Showing Virus Information");
+            stage.show();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
     
     @FXML
