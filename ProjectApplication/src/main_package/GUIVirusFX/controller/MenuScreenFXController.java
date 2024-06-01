@@ -23,7 +23,7 @@ public class MenuScreenFXController {
         try{
             final String PATH = "/main_package/GUIVirusFX/view/ChooseTypeVirus.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            fxmlLoader.setController(new ChooseTypeOfVirusFX());
+            fxmlLoader.setController(new ChooseTypeOfVirusFXController());
             Parent root = fxmlLoader.load();
             
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

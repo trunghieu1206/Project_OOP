@@ -28,15 +28,15 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus3" GridPane.rowIndex="1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus2" GridPane.columnIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hivBtnPressed" text="HIV" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hepatitisbBtnPressed" text="HepatitisB" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#flavivirusBtnPressed" text="Flavivirus" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sarscov2BtnPressed" text="Sars Cov 2" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <AnchorPane layoutY="256.0" prefHeight="60.0" prefWidth="600.0">
                <children>
-                  <Button layoutX="185.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="39.0" prefWidth="141.0" text="Return to Main menu" />
+                  <Button layoutX="185.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnMainMenuBtnPressed" prefHeight="39.0" prefWidth="141.0" text="Return to Main menu" />
                   <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="39.0" prefWidth="141.0" text="Return" />
                </children>
             </AnchorPane>

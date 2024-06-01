@@ -5,21 +5,30 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import javafx.scene.Node;
+import main_package.VirusStorage.Virus;
 
-public class ChooseTypeOfVirusFX {
+public class SpecificVirusViewController{
+	private Virus virus;
 
     @FXML
-    void Colorbutton(ActionEvent event) {
+    private Label virusTitle;
 
+   
+    
+    public SpecificVirusViewController(Virus virus) {
+    	this.virus = virus;
     }
-
+    
+    
+    
     @FXML
-    void btnVirusLipidEnvelop(ActionEvent event) {
-        try{
+    void returnBtnPressed(ActionEvent event) {
+    	try{
             final String PATH = "/main_package/GUIVirusFX/view/VirusWithLipidEnvelopFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             
@@ -28,36 +37,17 @@ public class ChooseTypeOfVirusFX {
             
             Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Virus With Lipid Envelop");
+            stage.setTitle("Choose Type of Virus");
             stage.show();
         }
         catch(IOException e){
             e.printStackTrace();
         }
     }
-
+    
     @FXML
-    void btnVirusWithoutLipidEnvelop(ActionEvent event) {
-        try{
-            final String PATH = "/main_package/GUIVirusFX/view/VirusWithoutLipidEnvelopFX.fxml";
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            
-            fxmlLoader.setController(new VirusWithoutLipidEnvelopFXController());
-            Parent root = fxmlLoader.load();
-            
-            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Virus Without Lipid Envelop");
-            stage.show();
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void returnMainMenu(ActionEvent event) {
-        try{
+    void returnMainMenuBtnPressed(ActionEvent event) {
+    	try{
             final String PATH = "/main_package/GUIVirusFX/view/MainScreenFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             
@@ -73,5 +63,7 @@ public class ChooseTypeOfVirusFX {
             e.printStackTrace();
         }
     }
+    
+    
 
 }
