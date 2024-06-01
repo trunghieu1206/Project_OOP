@@ -17,50 +17,13 @@ import main_package.VirusStorage.VirusWithLipidEnvelop.HIV;
 
 public class VirusWithLipidEnvelopFXController {
 	
-	@FXML
-    void btnSarsCov2Pressed(ActionEvent event) {
-    	try{
-            final String PATH = "/main_package/GUIVirusFX/view/VirusWithLEDisplay.fxml";
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            fxmlLoader.setController(new VirusWithLEDisplayFXController());
-            Parent root = fxmlLoader.load();
-            
-            //Access to controller
-            VirusWithLEDisplayFXController controller = fxmlLoader.getController();
-            controller.displayLabel("Sar-CoV-2");
-            
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Choose Type of Virus");
-            stage.show();
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-    }
+	
 
 
 	
     @FXML
-    void btnHIVPressed(ActionEvent event) {
-    	try{
-            final String PATH = "/main_package/GUIVirusFX/view/VirusWithLEDisplay.fxml";
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
-            fxmlLoader.setController(new VirusWithLEDisplayFXController());
-            Parent root = fxmlLoader.load();
-            
-            //Access to controller
-            VirusWithLEDisplayFXController controller = fxmlLoader.getController();
-            controller.displayLabel("HIV");
-            
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Choose Type of Virus");
-            stage.show();
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
+    void ColorButton(ActionEvent event) {
+
     }
     
    
@@ -150,4 +113,3 @@ public class VirusWithLipidEnvelopFXController {
     }
 
 }
-
