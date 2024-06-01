@@ -76,7 +76,7 @@ public abstract class Virus {
 		System.out.println("\n");
 	}
 	
-	public abstract void release();
+	public abstract String release();
 	
 	public void infectToNewCells() {
 		System.out.println("Newly created virus will repeat the infecting process with other cells in the body");
@@ -102,7 +102,7 @@ public abstract class Virus {
 		StringBuilder str = new StringBuilder("");
 		str.append("The structure of " + virus.getClass().getSimpleName() + ": ");
 		// add 4 spaces in front of each section
-		str.append("\n    1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
+		str.append("\n    1. Acid nucleic (genetic material): a(n) " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
 		str.append("\n    2. Capsid (protein shell that protect the genetic material)");
 		if (virus instanceof VirusWithLipidEnvelop) {
 			str.append("\n    3. Lipid envelop (the outermost layer of the virus that protects the genetic material in its life cycle\nwhen traveling between host cells)");

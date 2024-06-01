@@ -53,12 +53,15 @@ public abstract class VirusWithLipidEnvelop extends Virus{
 		super.replicateGene();
 	}
 	
-	public void release() {
+	public String release() {
+		StringBuilder str = new StringBuilder("");
 		l.setNum(10);
 		g.setNum(10);
-		System.out.println("Newly created virus emerge form the host cell.");
-		System.out.println("Some viruses with Lipid envelop retain parts of the host cell's membrane, forming an envelop around the virus. This envelop gives some protection to the virus from the immune system of the host organism.");
-		System.out.println("\n");
+		str.append("Newly created virus emerge form the host cell.");
+		str.append("\nSome viruses with Lipid envelop retain parts of the host cell's membrane, forming an envelop around the virus. This envelop gives some protection to the virus from the immune system of the host organism.");
+		
+		
+		return str.toString();
 	}
 	
 	public void displayInfectionProcess(){
