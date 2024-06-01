@@ -18,15 +18,15 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchor">
          <children>
-            <Button layoutX="219.0" layoutY="222.0" mnemonicParsing="false" onAction="#QuitButton" prefHeight="45.0" prefWidth="166.0" text="Quit">
+            <Button layoutX="216.0" layoutY="219.0" mnemonicParsing="false" onAction="#QuitButton" prefHeight="45.0" prefWidth="166.0" text="Quit">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button alignment="CENTER" layoutX="215.0" layoutY="135.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="174.0" text="Help">
+            <Button alignment="CENTER" layoutX="212.0" layoutY="140.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="174.0" text="Help">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="214.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnChooseTypeOfVirus" prefHeight="58.0" prefWidth="174.0" text="Choose Type Of Virus">
+            <Button layoutX="191.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnChooseTypeOfVirus" prefHeight="67.0" prefWidth="217.0" text="Choose Type Of Virus">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>

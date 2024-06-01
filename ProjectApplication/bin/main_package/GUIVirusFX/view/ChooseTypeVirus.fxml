@@ -18,15 +18,15 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchor">
          <children>
-            <Button layoutX="208.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnVirusWithoutLipidEnvelop" prefHeight="58.0" prefWidth="182.0" text="Virus Without Lipid Envelop">
+            <Button layoutX="177.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnVirusWithoutLipidEnvelop" prefHeight="58.0" prefWidth="244.0" text="Virus Without Lipid Envelop">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="208.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnVirusLipidEnvelop" prefHeight="58.0" prefWidth="182.0" text="Virus With Lipid Envelop">
+            <Button layoutX="177.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnVirusLipidEnvelop" prefHeight="58.0" prefWidth="244.0" text="Virus With Lipid Envelop">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="208.0" layoutY="225.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="47.0" prefWidth="182.0" text="Return">
+            <Button layoutX="209.0" layoutY="222.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="47.0" prefWidth="182.0" text="Return">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
