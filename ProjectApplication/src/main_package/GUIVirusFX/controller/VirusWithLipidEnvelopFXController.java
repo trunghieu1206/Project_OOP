@@ -31,6 +31,7 @@ public class VirusWithLipidEnvelopFXController {
     
     @FXML
     void hivBtnPressed(ActionEvent event) {
+    	// initialize HIV
     	LipidEnvelop l = new LipidEnvelop(1);
     	Glycoprotein g = new Glycoprotein("a type", 1);
     	AcidNucleic a = new AcidNucleic("a type", "a strand", 1);
@@ -39,6 +40,7 @@ public class VirusWithLipidEnvelopFXController {
     	int year = 2000;
     	String origin = "place";
     	HIV newVirus = new HIV(l, g, a, c, disease, year, origin);
+    	//
     	
     	try{
             final String PATH = "/main_package/GUIVirusFX/view/SpecificVirusView.fxml";
