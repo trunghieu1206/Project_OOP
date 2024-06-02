@@ -26,7 +26,7 @@ public class VirusWithoutLipidEnvelopFXController {
     	// initialize adenovirus
     	AcidNucleic a = new AcidNucleic("DNA", "double", 1);
     	Capsid c = new Capsid(1);
-    	String disease = "a wide range of illnesses and symptoms such as colds, sore throat, bronchitis, pneumonia, diarrhea, pink eye, bladder infection, ...";
+    	String disease = "illnesses";
     	int year = 1953;
     	String origin = "USA";
     	Adenovirus newVirus = new Adenovirus(a, c, disease, year, origin);
