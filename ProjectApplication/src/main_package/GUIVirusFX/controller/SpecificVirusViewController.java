@@ -13,6 +13,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import main_package.VirusStorage.Virus;
+import main_package.VirusStorage.VirusWithLipidEnvelop.VirusWithLipidEnvelop;
+import main_package.VirusStorage.VirusWithoutLipidEnvelop.VirusWithoutLipidEnvelop;
 
 public class SpecificVirusViewController{
 	private Virus virus;
@@ -65,6 +67,7 @@ public class SpecificVirusViewController{
     @FXML
     void returnBtnPressed(ActionEvent event) {
     	try{
+    		if(this.virus instanceof VirusWithLipidEnvelop) {
             final String PATH = "/main_package/GUIVirusFX/view/VirusWithLipidEnvelopFX.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
             
@@ -76,6 +79,19 @@ public class SpecificVirusViewController{
             stage.setTitle("Virus With Lipid Envelop");
             stage.show();
         }
+    		else if(this.virus instanceof VirusWithoutLipidEnvelop) {
+            final String PATH = "/main_package/GUIVirusFX/view/VirusWithoutLipidEnvelopFX.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PATH));
+            
+            fxmlLoader.setController(new VirusWithoutLipidEnvelopFXController());
+            Parent root = fxmlLoader.load();
+            
+            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Virus Without Lipid Envelop");
+            stage.show();
+        }
+    	}
         catch(IOException e){
             e.printStackTrace();
         }

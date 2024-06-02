@@ -1,4 +1,5 @@
 
+
 package main_package.VirusStorage.VirusWithLipidEnvelop;
 
 import main_package.VirusStorage.Part.AcidNucleic;
@@ -12,15 +13,17 @@ public class HIV extends VirusWithLipidEnvelop{
         super(l, g, a, c, disease, year, origin);
     }
 
-    public void replicateGene() {
+    public String replicateGene() {
+    	StringBuilder str = new StringBuilder("");
         a.setType("DNA");
         a.setNum(1);
 
         a.setStrand("Double");
 
-        System.out.println("The viral RNA genome is reverse transcribed into double-stranded DNA");
-        System.out.println("It replicates its genetic material in the cytoplasm of infected host cells");
-        super.replicateGene();
-        System.out.println("It replicates its genetic material in the nucleus of infected host cells");
+        str.append("The viral RNA genome is reverse transcribed into double-stranded DNA\n");
+        str.append("It replicates its genetic material in the cytoplasm of infected host cells\n");
+        str.append(super.replicateGene());
+        str.append("It replicates its genetic material in the nucleus of infected host cells\n");
+        return str.toString();
     }
 }

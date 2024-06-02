@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1400.0" styleClass="bottom" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="160.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="600.0" text="Virus Without Lipid Envelop" textFill="#090de1">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="2.0" prefHeight="96.0" prefWidth="780.0" text="Virus Without Lipid Envelop">
                <font>
-                  <Font size="40.0" />
+                  <Font size="50.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="408.0" prefWidth="600.0">
          <children>
-            <GridPane alignment="CENTER" prefHeight="256.0" prefWidth="600.0">
+            <GridPane alignment="CENTER" layoutY="6.0" prefHeight="474.0" prefWidth="1400.0">
                <children>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus3" GridPane.rowIndex="1" />
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Virus2" GridPane.columnIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#adenovirusBtnPressed" text="Adenovirus">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#rhinovirusBtnPressed" prefWidth="671.0" text="Rhinovirus" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#rotavirusBtnPressed" text="Rotavirus" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#poliovirusBtnPressed" prefHeight="251.0" prefWidth="682.0" text="Poliovirus" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -34,10 +50,16 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
-            <AnchorPane layoutY="256.0" prefHeight="65.0" prefWidth="600.0">
+            <AnchorPane layoutY="500.0" prefHeight="76.0" prefWidth="1400.0">
                <children>
-                  <Button layoutX="186.0" layoutY="31.0" mnemonicParsing="false" onAction="#returnMainMenuBtnPressed" prefHeight="39.0" prefWidth="134.0" text="Return to Main Menu" />
-                  <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="39.0" prefWidth="141.0" text="Return" />
+                  <Button layoutX="700.0" layoutY="26.0" mnemonicParsing="false" onAction="#returnMainMenuBtnPressed" prefHeight="50.0" prefWidth="250.0" text="Return to Main Menu">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+                  <Button layoutX="450.0" layoutY="26.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="50.0" prefWidth="250.0" text="Return">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
                </children>
             </AnchorPane>
          </children>

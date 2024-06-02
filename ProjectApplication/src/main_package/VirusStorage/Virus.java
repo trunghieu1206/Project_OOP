@@ -60,30 +60,34 @@ public abstract class Virus {
 		this.origin = origin;
 	}
 
-	public abstract void attachToHostCell();
+	public abstract String attachToHostCell();
 	
-	public abstract void entryIntoHostCell();
+	public abstract String entryIntoHostCell();
 	
-	public void replicateGene() {
+	public String replicateGene() {
+		StringBuilder str = new StringBuilder("");
 		a.setNum(10);
-		System.out.println("The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins");
-		System.out.println("\n");
+		str.append("The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins\n");
+		return str.toString();
 	}
 	
-	public void assemble() {
+	public String assemble() {
+		StringBuilder str = new StringBuilder("");
 		c.setNum(10);
-		System.out.println("New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins");
-		System.out.println("\n");
+		str.append("New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins\n");
+		return str.toString();
+
 	}
 	
-	public abstract void release();
+	public abstract String release();
 	
-	public void infectToNewCells() {
-		System.out.println("Newly created virus will repeat the infecting process with other cells in the body");
-		System.out.println("\n");
+	public String infectToNewCells() {
+		StringBuilder str = new StringBuilder("");
+		str.append("Newly created virus will repeat the infecting process with other cells in the body\n");
+		return str.toString();
 	}
 	
-	public abstract void displayInfectionProcess();
+	public abstract String displayInfectionProcess();
 	
 	
 	public String displayInformation(Virus virus) {
