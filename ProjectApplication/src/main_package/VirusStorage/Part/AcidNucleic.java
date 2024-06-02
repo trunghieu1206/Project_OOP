@@ -1,14 +1,18 @@
-package main_package.VirusStorage;
+
+package main_package.VirusStorage.Part;
+
 
 public class AcidNucleic {
 	private String type;
 	private String strand;
 	private int num;
 	
-	public AcidNucleic(String type, int strand, int num) {
+  
+	public AcidNucleic(String type, String strand, int num) {
 		this.type = type;
 		this.strand = strand;
-		this.strand = num;
+		this.num = num;
+
 	}
 
 	public String getType() {
@@ -19,11 +23,12 @@ public class AcidNucleic {
 		this.type = type;
 	}
 
-	public int getStrand() {
+
+	public String getStrand() {
 		return strand;
 	}
 
-	public void setStrand(int strand) {
+	public void setStrand(String strand) {
 		this.strand = strand;
 	}
 

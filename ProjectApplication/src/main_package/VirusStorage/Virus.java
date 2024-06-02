@@ -1,5 +1,10 @@
 package main_package.VirusStorage;
 
+
+import main_package.VirusStorage.Part.AcidNucleic;
+import main_package.VirusStorage.Part.Capsid;
+import main_package.VirusStorage.VirusWithLipidEnvelop.VirusWithLipidEnvelop;
+
 public abstract class Virus {
 	protected AcidNucleic a;
 	protected Capsid c;
@@ -55,43 +60,58 @@ public abstract class Virus {
 		this.origin = origin;
 	}
 
-	public abstract void attachToHostCell();
+	public abstract String attachToHostCell();
 	
-	public abstract void entryIntoHostCell();
+	public abstract String entryIntoHostCell();
 	
-	public void replicateGene() {
+	public String replicateGene() {
+		StringBuilder str = new StringBuilder("");
 		a.setNum(10);
-		System.out.println("The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins");
-		System.out.println("\n");
+		str.append("The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins\n");
+		return str.toString();
 	}
 	
-	public void assemble() {
+	public String assemble() {
+		StringBuilder str = new StringBuilder("");
 		c.setNum(10);
-		System.out.println("New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins");
-		System.out.println("\n");
+		str.append("New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins\n");
+		return str.toString();
+
 	}
 	
-	public abstract void release();
+	public abstract String release();
 	
-	public void infectToNewCells() {
-		System.out.println("Newly created virus will repeat the infecting process with other cells in the body");
-		System.out.println("\n");
+	public String infectToNewCells() {
+		StringBuilder str = new StringBuilder("");
+		str.append("Newly created virus will repeat the infecting process with other cells in the body\n");
+		return str.toString();
 	}
 	
-	public abstract void displayInfectionProcess();
+	public abstract String displayInfectionProcess();
 	
-	public <T> void displayInformation(T virus) {
-		System.out.println("It is the virus responsible for " + virus.getDisease());
-		System.out.println("It was first identified in " + virus.getYear() + " in " + virus.getOrigin() + ".");
+	
+	public String displayInformation(Virus virus) {
+		
+		StringBuilder str = new StringBuilder("");
+		str.append("It is the virus responsible for ");
+		str.append(virus.getDisease());
+		str.append("\nIt was first identified in ");
+		str.append(virus.getYear());
+		str.append(" in ");
+		str.append(virus.getOrigin() + ".");
+		return str.toString();
 	}
 
-	public <T> void displayStructure(T virus) {
-		System.out.println("The structure of " + virus.getClass().getName() + ": ");
-		System.out.println("1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
-		System.out.println("2. Capsid (protein shell that protect the genetic material)");
+	public String displayStructure(Virus virus) {
+		StringBuilder str = new StringBuilder("");
+		str.append("The structure of " + virus.getClass().getSimpleName() + ": ");
+		// add 4 spaces in front of each section
+		str.append("\n    1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
+		str.append("\n    2. Capsid (protein shell that protect the genetic material)");
 		if (virus instanceof VirusWithLipidEnvelop) {
-			System.out.println("3. Lipid envelop (the outermost layer of the virus that protects the genetic material in its life cycle when traveling between host cells)");
-			System.out.println("4. Spike glycoprotein (is embedded within the lipid envelope and plays a crucial role in viral attachment to host cells)");
+			str.append("\n    3. Lipid envelop (the outermost layer of the virus that protects the genetic material in its life cycle\nwhen traveling between host cells)");
+			str.append("\n    4. Spike glycoprotein (is embedded within the lipid envelope and plays a crucial role in viral\nattachment to host cells)");
 		}
+		return str.toString();
 	}
 }
