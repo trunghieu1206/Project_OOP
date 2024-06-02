@@ -95,10 +95,10 @@ public abstract class Virus {
 		StringBuilder str = new StringBuilder("");
 		str.append("It is the virus responsible for ");
 		str.append(virus.getDisease());
-		str.append("\nIt was first identified in ");
+		str.append(".\nIt was first identified in ");
 		str.append(virus.getYear());
 		str.append(" in ");
-		str.append(virus.getOrigin() + ".");
+		str.append(virus.getOrigin() + ".\n");
 		return str.toString();
 	}
 
@@ -109,7 +109,7 @@ public abstract class Virus {
 		str.append("\n    1. Acid nucleic (genetic material): a " + virus.getA().getStrand() + "-stranded " + virus.getA().getType());
 		str.append("\n    2. Capsid (protein shell that protect the genetic material)");
 		if (virus instanceof VirusWithLipidEnvelop) {
-			str.append("\n    3. Lipid envelop (the outermost layer of the virus that protects the genetic material in its life cycle\nwhen traveling between host cells)");
+			str.append("\n    3. Lipid envelope (the outermost layer of the virus that protects the genetic material in its life cycle\nwhen traveling between host cells)");
 			str.append("\n    4. Spike glycoprotein (is embedded within the lipid envelope and plays a crucial role in viral\nattachment to host cells)");
 		}
 		return str.toString();
