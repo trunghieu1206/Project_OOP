@@ -18,5 +18,12 @@ public class Glycoprotein {
 	public void setNum(int num) {
 		this.num = num;
 	}
+	public String getType() {
+		return type;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
+	}
 	
 }

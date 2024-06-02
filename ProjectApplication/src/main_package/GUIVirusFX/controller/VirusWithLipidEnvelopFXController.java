@@ -17,19 +17,11 @@ import main_package.VirusStorage.Part.LipidEnvelop;
 import main_package.VirusStorage.VirusWithLipidEnvelop.*;
 
 public class VirusWithLipidEnvelopFXController {
-	
-	
-
-
-	
     @FXML
     void ColorButton(ActionEvent event) {
 
     }
-    
-   
-    
-    
+      
     @FXML
     void hivBtnPressed(ActionEvent event) {
     	// initialize HIV
