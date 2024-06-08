@@ -6,27 +6,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.20100502512562815" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" stylesheets="@../cssStyle/mainMenuStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="750.0" prefWidth="1400.0" stylesheets="@../cssStyle/mainMenuStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="605.0" prefWidth="1398.0" styleClass="anchor">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="10.0" text="Choose Type of Virus" textFill="#242425">
+            <Label layoutY="225.0" text="  Choose Type Of Virus" textFill="#fcf9f9">
                <font>
-                  <Font name="System Bold" size="40.0" />
+                  <Font name="System Bold" size="44.0" />
                </font>
             </Label>
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchor">
-         <children>
-            <Button layoutX="177.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnVirusWithoutLipidEnvelop" prefHeight="58.0" prefWidth="244.0" text="Virus Without Lipid Envelope">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-72.0" prefHeight="139.0" prefWidth="1542.0" style="-fx-background-color: #2F2B43;" text="Virus Information Application" textFill="#e9e9eb">
+               <font>
+                  <Font name="System Bold" size="49.0" />
+               </font>
+            </Label>
+            <Button id="sale" alignment="BASELINE_LEFT" layoutY="503.0" mnemonicParsing="false" onAction="#btnVirusWithoutLipidEnvelop" prefHeight="85.0" prefWidth="555.0" text="Virus Without Lipid Envelope">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="177.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnVirusLipidEnvelop" prefHeight="58.0" prefWidth="244.0" text="Virus With Lipid Envelope">
+            <Button id="sale" alignment="BASELINE_LEFT" layoutY="347.0" mnemonicParsing="false" onAction="#btnVirusLipidEnvelop" prefHeight="85.0" prefWidth="555.0" text="Virus With Lipid Envelope">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="209.0" layoutY="222.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="47.0" prefWidth="182.0" text="Return">
+            <Button id="sale" alignment="BASELINE_LEFT" layoutY="631.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="85.0" prefWidth="555.0" text="Return">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>

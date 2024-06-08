@@ -6,29 +6,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.22110552763819097" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" stylesheets="@../cssStyle/mainMenuStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="750.0" prefWidth="1400.0" stylesheets="@../cssStyle/mainMenuStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1398.0" styleClass="anchor">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="14.0" text="Virus Information App" textFill="#2e2e2f">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-72.0" prefHeight="139.0" prefWidth="1542.0" style="-fx-background-color: #2F2B43;" text="Virus Information Application" textFill="#e9e9eb">
                <font>
-                  <Font name="System Bold" size="40.0" />
+                  <Font name="System Bold" size="49.0" />
                </font>
             </Label>
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchor">
-         <children>
-            <Button layoutX="216.0" layoutY="219.0" mnemonicParsing="false" onAction="#QuitButton" prefHeight="45.0" prefWidth="166.0" text="Quit">
+            <Button id="sale" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="620.0" mnemonicParsing="false" onAction="#QuitButton" prefHeight="101.0" prefWidth="496.0" text="   Quit">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button alignment="CENTER" layoutX="212.0" layoutY="140.0" mnemonicParsing="false" onAction="#btnHelpPressed" prefHeight="52.0" prefWidth="174.0" text="Help">
+            <Button id="sale" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="472.0" mnemonicParsing="false" onAction="#btnHelpPressed" prefHeight="101.0" prefWidth="496.0" text="   Help">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button layoutX="191.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnChooseTypeOfVirus" prefHeight="67.0" prefWidth="217.0" text="Choose Type Of Virus">
+            <Button id="sale" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnChooseTypeOfVirus" prefHeight="101.0" prefWidth="496.0" text="   Choose Type Of Virus">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="23.0" />
                </font></Button>
          </children></AnchorPane>
   </items>

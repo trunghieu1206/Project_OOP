@@ -11,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import main_package.VirusStorage.Virus;
 import main_package.VirusStorage.VirusWithLipidEnvelop.VirusWithLipidEnvelop;
@@ -29,6 +31,11 @@ public class SpecificVirusViewController{
     private BorderPane borderPane;
 
    
+    @FXML
+    private Label virusName;
+    
+    @FXML
+    private VBox contentVbox;
     
     public SpecificVirusViewController(Virus virus) {
     	this.virus = virus;
@@ -40,8 +47,12 @@ public class SpecificVirusViewController{
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/ShowBasicInformationVirus.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
+        	
+        	
+        	
         	ShowBasicInformationVirusController showBasicInformationVirusController = new ShowBasicInformationVirusController(virus);
         	fxmlLoader.setController(showBasicInformationVirusController);
+        	
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
@@ -58,7 +69,7 @@ public class SpecificVirusViewController{
     	//change title for GUI
     	virusTitle.setText(virus.getClass().getSimpleName());
     	
-    	
+    	virusName.setText(virus.getClass().getSimpleName());
     	
     }
     
@@ -121,11 +132,15 @@ public class SpecificVirusViewController{
     	this.choice = 0;
     	System.out.println("0");
     	try {
+    		
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/ShowBasicInformationVirus.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
-        	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
+    		fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
+        	
+    		
         	ShowBasicInformationVirusController showBasicInformationVirusController = new ShowBasicInformationVirusController(virus);
         	fxmlLoader.setController(showBasicInformationVirusController);
+        	
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
@@ -133,6 +148,7 @@ public class SpecificVirusViewController{
         	showBasicInformationVirusController.setData();
         	
         	borderPane.setCenter(anchorPane);
+        	
         	
         	
     	} catch(IOException e) {

@@ -24,31 +24,31 @@ public class ShowBasicInformationVirusController {
     public void setData() {
     	virusInformationDisplay.setText(this.virus.displayInformation(virus));
     	if(this.virus instanceof HIV) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/HIVvirus.jpg"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/HIVicon.png"));
         	virusImage.setImage(HIV);
     	}
     	else if(this.virus instanceof SarsCov2) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/Sars-CoV2icon.png"));
         	virusImage.setImage(HIV);
     	}
     	else if(this.virus instanceof Flavivirus) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/FlavivirusIcon.png"));
         	virusImage.setImage(HIV);
     	}
     	else if(this.virus instanceof HepatitisB) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/HepatitisBicon.png"));
         	virusImage.setImage(HIV);
     	}else if(this.virus instanceof Adenovirus) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/AdenovirusIcon.png"));
         	virusImage.setImage(HIV);
     	}else if(this.virus instanceof Poliovirus) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/PolioVirusIcon.png"));
         	virusImage.setImage(HIV);
     	}else if(this.virus instanceof Rhinovirus) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/RhinovirusIcon.png"));
         	virusImage.setImage(HIV);
     	}else if(this.virus instanceof Rotavirus) {
-    		Image HIV = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image HIV = new Image(getClass().getResourceAsStream("../image/RotavirusIcon.png"));
         	virusImage.setImage(HIV);
     	}
     	
