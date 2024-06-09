@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import main_package.VirusStorage.Virus;
 import main_package.VirusStorage.VirusWithLipidEnvelop.*;
@@ -36,6 +37,14 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 2");
     				infectionMechanism.setText(this.virus.entryIntoHostCell());
+    				if (this.virus instanceof VirusWithLipidEnvelop) {
+    		    		Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step2_fin_fin.png"));
+    		    		infectionStepImage.setImage(img);
+    		    	}
+    				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step2_fin.png"));
+    					infectionStepImage.setImage(img);
+    				}
     				stepCnt=stepCnt+1;
     			
     		}
@@ -43,6 +52,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 3");
     				infectionMechanism.setText(this.virus.replicateGene());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step3(replicate).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt++;
     			
     		}
@@ -50,6 +61,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 4");
     				infectionMechanism.setText(this.virus.assemble());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step4(assemble).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt++;
     			
     		}
@@ -57,6 +70,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 5");
     				infectionMechanism.setText(this.virus.release());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step5(release).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt++;
     			
     		}
@@ -65,6 +80,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 6");
     				infectionMechanism.setText(this.virus.infectToNewCells());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step6(infect_to_new_cell).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt++;
     			
     		}
@@ -81,6 +98,14 @@ public class ShowInfectionVirusController {
     		 
     				stepNumber.setText("Step 1");
     				infectionMechanism.setText(this.virus.attachToHostCell());
+    				if (this.virus instanceof VirusWithLipidEnvelop) {
+    		    		Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step1.jpg"));
+    		    		infectionStepImage.setImage(img);
+    				}
+    				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step1.png"));
+    					infectionStepImage.setImage(img);
+    				}
     				stepCnt--;
     			
     		}
@@ -88,6 +113,14 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 2");
     				infectionMechanism.setText(this.virus.entryIntoHostCell());
+    				if (this.virus instanceof VirusWithLipidEnvelop) {
+    		    		Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step2_fin_fin.png"));
+    		    		infectionStepImage.setImage(img);
+    				}
+    				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step2_fin.png"));
+    					infectionStepImage.setImage(img);
+    				}
     				stepCnt--;
     			
     		}
@@ -95,6 +128,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 3");
     				infectionMechanism.setText(this.virus.replicateGene());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step3(replicate).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt--;
     			
     		}
@@ -102,6 +137,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 4");
     				infectionMechanism.setText(this.virus.assemble());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step4(assemble).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt--;
     			
     		}
@@ -110,6 +147,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 5");
     				infectionMechanism.setText(this.virus.release());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step5(release).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt--;
     			
     		}
@@ -121,7 +160,14 @@ public class ShowInfectionVirusController {
     public void setData() {
     	stepNumber.setText("Step 1");
     	infectionMechanism.setText(this.virus.attachToHostCell());
-
+    	if (this.virus instanceof VirusWithLipidEnvelop) {
+    		Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step1.jpg"));
+    		infectionStepImage.setImage(img);
+    	}
+    	else if (this.virus instanceof VirusWithoutLipidEnvelop) {
+			Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step1.png"));
+			infectionStepImage.setImage(img);
+    	}
     }
     
 }

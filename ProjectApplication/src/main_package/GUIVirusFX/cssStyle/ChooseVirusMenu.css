@@ -1,0 +1,73 @@
+.root{
+	-fx-background-color: #2f2b43;
+}
+
+.button2
+{
+-fx-background-color : rgba(57,51,81,.60);
+-fx-background-radius :  20;
+}
+.button2:hover
+{
+-fx-background-color : rgba(82,74,123,.6) ;
+-fx-background-radius :  20;
+}
+.button2:pressed
+{
+-fx-background-color : rgba(47,43,67,.6) ;
+-fx-background-radius :  20;
+}
+
+.buttonReturn
+{
+	-fx-background-color : transparent;
+	-fx-background-radius : 40 40 40 40;
+}
+.buttonReturn:hover
+{
+	-fx-background-color : #524A7B ;
+	-fx-background-radius :  50 50 50 50;
+	-fx-underline:true;
+}
+.buttonReturn:pressed
+{
+-fx-background-color : #2F2B43 ;
+-fx-background-radius :  50 50 50 50;
+-fx-underline:true;
+}
+
+.buttonReturnMM1
+{
+	-fx-background-color : #393351;
+	-fx-background-radius : 10 0 0 10;
+}
+.buttonReturnMM1:hover
+{
+	-fx-background-color : #524A7B;
+	-fx-background-radius : 10 0 0 10;
+	-fx-underline:true;
+}
+.buttonReturnMM1:pressed
+{
+	-fx-background-color : #2F2B43;
+	-fx-background-radius : 10 0 0 10;
+	-fx-underline:true;
+}
+
+.buttonReturnMM2
+{
+	-fx-background-color : #fa2c56;
+	-fx-background-radius : 10 0 0 10;
+}
+.buttonReturnMM2:hover
+{
+	-fx-background-color : #ec4567;
+	-fx-background-radius : 10 0 0 10;
+	-fx-underline:true;
+}
+.buttonReturnMM2:pressed
+{
+	-fx-background-color : #f81241;
+	-fx-background-radius : 10 0 0 10;
+	-fx-underline:true;
+}

@@ -2,69 +2,130 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1400.0" styleClass="bottom" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1400.0" stylesheets="@../cssStyle/ChooseVirusMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="100.0" prefWidth="160.0">
+      <Pane layoutX="-378.0" layoutY="-368.0" prefHeight="405.0" prefWidth="1452.0" rotate="31.0" style="-fx-background-color: fa2c56; -fx-background-radius: 20;" />
+      <Pane layoutX="183.0" layoutY="711.0" prefHeight="405.0" prefWidth="1452.0" rotate="31.0" style="-fx-background-color: fa2c56; -fx-background-radius: 20;" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="2.0" prefHeight="96.0" prefWidth="841.0" text="Virus With Lipid Envelope">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="2.0" prefHeight="96.0" prefWidth="841.0" text="Virus With Lipid Envelope" textFill="#f2efef">
                <font>
-                  <Font size="50.0" />
+                  <Font name="System Bold" size="50.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="408.0" prefWidth="600.0">
+      <AnchorPane layoutX="18.0" layoutY="86.0" prefHeight="531.0" prefWidth="1400.0">
          <children>
-            <GridPane alignment="CENTER" prefHeight="480.0" prefWidth="1400.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+            <Pane layoutX="145.0" layoutY="30.0" prefHeight="250.0" prefWidth="438.0">
                <children>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hivBtnPressed" text="HIV">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font></Button>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hepatitisbBtnPressed" prefHeight="189.0" prefWidth="438.0" text="HepatitisB" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font></Button>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#flavivirusBtnPressed" text="Flavivirus" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font></Button>
-                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sarscov2BtnPressed" text="Sars Cov 2" GridPane.columnIndex="1">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font></Button>
-               </children>
-            </GridPane>
-            <AnchorPane layoutY="500.0" prefHeight="76.0" prefWidth="1400.0">
-               <children>
-                  <Button layoutX="451.0" layoutY="26.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="50.0" prefWidth="250.0" text="Return">
+                  <Button id="shiny" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hivBtnPressed" prefHeight="250.0" prefWidth="438.0" styleClass="button2">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="182.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/HIVicon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Button>
-                  <Button layoutX="701.0" layoutY="26.0" mnemonicParsing="false" onAction="#returnMainMenuBtnPressed" prefHeight="50.0" prefWidth="250.0" text="Return to Main menu">
+                  <Label layoutX="186.0" layoutY="195.0" text="HIV" textFill="#e4dddd">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="145.0" layoutY="298.0" prefHeight="250.0" prefWidth="438.0">
+               <children>
+                  <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hepatitisbBtnPressed" prefHeight="250.0" prefWidth="438.0" styleClass="button2">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="182.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/HepatitisBicon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Button>
+                  <Label layoutX="126.0" layoutY="196.0" text="Hepatitis B" textFill="#e4dddd">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
                </children>
-            </AnchorPane>
+            </Pane>
+            <Pane layoutX="811.0" layoutY="298.0" prefHeight="250.0" prefWidth="438.0">
+               <children>
+                  <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#flavivirusBtnPressed" prefHeight="250.0" prefWidth="438.0" styleClass="button2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="182.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/FlavivirusIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="139.0" layoutY="196.0" text="Flavivirus" textFill="#e4dddd">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="811.0" layoutY="30.0" prefHeight="250.0" prefWidth="438.0">
+               <children>
+                  <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sarscov2BtnPressed" prefHeight="250.0" prefWidth="438.0" styleClass="button2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="182.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Sars-Cov2icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="126.0" layoutY="196.0" text="Sars-CoV-2" textFill="#e4dddd">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </AnchorPane>
+      <Button layoutX="1059.0" layoutY="675.0" mnemonicParsing="false" onAction="#returnMainMenuBtnPressed" prefHeight="59.0" prefWidth="345.0" styleClass="buttonReturnMM2" text="Return to Main menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="4.0" layoutY="13.0" mnemonicParsing="false" onAction="#returnBtnPressed" prefHeight="72.0" prefWidth="247.0" styleClass="buttonReturn" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/backIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
-</VBox>
+</AnchorPane>

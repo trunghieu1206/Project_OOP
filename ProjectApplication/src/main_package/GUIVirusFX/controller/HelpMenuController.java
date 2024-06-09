@@ -8,8 +8,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class HelpMenuController {
@@ -17,20 +21,27 @@ public class HelpMenuController {
 	private BorderPane borderPane;
 	
 	@FXML
+	private Label titleLabel;
+	
+	@FXML
 	void initialize(ActionEvent event) {
 		try {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Aim.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_AimController HelpAimController = new Help_AimController();
-        	fxmlLoader.setController(HelpAimController);
+        	Help_AimController helpAimController = new Help_AimController();
+        	fxmlLoader.setController(helpAimController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpAimController.setContent();
+        	helpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
+        	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,46);
+        	titleLabel.setText("AIMS");
+        	titleLabel.setFont(font);
         	
         	
     	} catch(IOException e) {
@@ -51,6 +62,7 @@ public class HelpMenuController {
             stage.setScene(new Scene(root));
             stage.setTitle("Main Screen");
             stage.show();
+            
         }
         catch(IOException e){
             e.printStackTrace();
@@ -63,16 +75,18 @@ public class HelpMenuController {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Aim.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_AimController HelpAimController = new Help_AimController();
-        	fxmlLoader.setController(HelpAimController);
+        	Help_AimController helpAimController = new Help_AimController();
+        	fxmlLoader.setController(helpAimController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpAimController.setContent();
+        	helpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
-        	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,46);
+        	titleLabel.setText("AIMS");
+        	titleLabel.setFont(font);
         	
     	} catch(IOException e) {
     		e.printStackTrace();
@@ -85,16 +99,19 @@ public class HelpMenuController {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Usage.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_UsageController HelpUsageController = new Help_UsageController();
-        	fxmlLoader.setController(HelpUsageController);
+        	Help_UsageController helpUsageController = new Help_UsageController();
+        	fxmlLoader.setController(helpUsageController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpUsageController.setContent();
+        	helpUsageController.setContent();
         	
         	borderPane.setCenter(anchorPane);
         	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,41);
+        	titleLabel.setText("Basic Usage");
+        	titleLabel.setFont(font);
         	
     	} catch(IOException e) {
     		e.printStackTrace();
