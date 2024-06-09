@@ -28,31 +28,31 @@ public class ShowStructureVirusController {
     public void setData() {
     	virusStructure.setText(this.virus.displayStructure(virus));
     	if(this.virus instanceof HIV) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/HIVvirus.jpg"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/Hiv_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
     	else if(this.virus instanceof SarsCov2) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/sarcov2_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
     	else if(this.virus instanceof Flavivirus) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/flavivirus_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
     	else if(this.virus instanceof HepatitisB) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/hepatitisb_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}else if(this.virus instanceof Adenovirus) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/adeno_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}else if(this.virus instanceof Poliovirus) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/poliovirus_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}else if(this.virus instanceof Rhinovirus) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/rhinovirus_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}else if(this.virus instanceof Rotavirus) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/SarsCoV2.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/rota_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
     	

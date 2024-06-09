@@ -1,4 +1,4 @@
-package main_package.GUIVirusFX;
+       package main_package.GUIVirusFX;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

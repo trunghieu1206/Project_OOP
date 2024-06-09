@@ -18,38 +18,41 @@
         </columnConstraints>
         <rowConstraints>
             <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="234.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="233.0" minHeight="10.0" prefHeight="208.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="221.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="260.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="infectionMechanism" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="262.0" prefWidth="1088.0" text="Display infection process here" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
+            <Label fx:id="infectionMechanism" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="200.0" prefWidth="1007.0" text="Display infection process here" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
-            </Label>
-            <ImageView fx:id="infectionStepImage" fitHeight="198.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                <GridPane.margin>
-                  <Insets left="363.0" />
+                  <Insets top="12.0" />
+               </GridPane.margin>
+            </Label>
+            <ImageView fx:id="infectionStepImage" fitHeight="259.0" fitWidth="458.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="54.0" left="270.0" />
                </GridPane.margin>
             </ImageView>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
                <children>
-                  <Button layoutX="542.0" layoutY="8.0" mnemonicParsing="false" onAction="#nextStepPressed" prefHeight="48.0" prefWidth="228.0" text="Next Step&gt;&gt;&gt;">
+                  <Button layoutX="734.0" layoutY="8.0" mnemonicParsing="false" onAction="#nextStepPressed" prefHeight="48.0" prefWidth="228.0" style="-fx-background-color: transparent;" text="Next Step&gt;&gt;&gt;" textFill="WHITE" underline="true">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="8.0" mnemonicParsing="false" onAction="#previousStepPressed" prefHeight="48.0" prefWidth="228.0" text="&lt;&lt;&lt;Previous Step" textAlignment="CENTER">
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="8.0" mnemonicParsing="false" onAction="#previousStepPressed" prefHeight="48.0" prefWidth="228.0" style="-fx-background-color: transparent;" text="&lt;&lt;&lt;Previous Step" textAlignment="CENTER" textFill="WHITE" underline="true">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
-            <Label fx:id="stepNumber" prefHeight="68.0" prefWidth="1096.0" text="Label" textFill="WHITE">
+            <Label fx:id="stepNumber" prefHeight="68.0" prefWidth="1096.0" text="Label" textFill="WHITE" underline="true">
                <font>
-                  <Font size="23.0" />
+                  <Font size="25.0" />
                </font>
                <GridPane.margin>
                   <Insets left="30.0" />
