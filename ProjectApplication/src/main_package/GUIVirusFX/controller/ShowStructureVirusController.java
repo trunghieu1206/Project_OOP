@@ -55,8 +55,6 @@ public class ShowStructureVirusController {
     		Image viruStruct = new Image(getClass().getResourceAsStream("../image/rota_struct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
-    	
-    	// do remaining virus classes
     }
     
     

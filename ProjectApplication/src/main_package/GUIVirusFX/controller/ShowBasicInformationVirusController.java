@@ -51,8 +51,6 @@ public class ShowBasicInformationVirusController {
     		Image HIV = new Image(getClass().getResourceAsStream("../image/RotavirusIcon.png"));
         	virusImage.setImage(HIV);
     	}
-    	
-    	// do remaining virus classes
     }
     
 

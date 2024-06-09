@@ -29,13 +29,13 @@ public class HelpMenuController {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Aim.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_AimController HelpAimController = new Help_AimController();
-        	fxmlLoader.setController(HelpAimController);
+        	Help_AimController helpAimController = new Help_AimController();
+        	fxmlLoader.setController(helpAimController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpAimController.setContent();
+        	helpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
         	
@@ -75,13 +75,13 @@ public class HelpMenuController {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Aim.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_AimController HelpAimController = new Help_AimController();
-        	fxmlLoader.setController(HelpAimController);
+        	Help_AimController helpAimController = new Help_AimController();
+        	fxmlLoader.setController(helpAimController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpAimController.setContent();
+        	helpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
         	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,46);
@@ -99,13 +99,13 @@ public class HelpMenuController {
     		final String CONTENT_FXML_FILE_PATH = "/main_package/GUIVirusFX/view/Help_Usage.fxml";
         	FXMLLoader fxmlLoader = new FXMLLoader();
         	fxmlLoader.setLocation(getClass().getResource(CONTENT_FXML_FILE_PATH));
-        	Help_UsageController HelpUsageController = new Help_UsageController();
-        	fxmlLoader.setController(HelpUsageController);
+        	Help_UsageController helpUsageController = new Help_UsageController();
+        	fxmlLoader.setController(helpUsageController);
         	AnchorPane anchorPane = new AnchorPane();
         	
         	anchorPane = fxmlLoader.load();
         	
-        	HelpUsageController.setContent();
+        	helpUsageController.setContent();
         	
         	borderPane.setCenter(anchorPane);
         	

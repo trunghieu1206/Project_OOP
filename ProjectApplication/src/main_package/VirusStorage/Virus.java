@@ -67,14 +67,14 @@ public abstract class Virus {
 	public String replicateGene() {
 		StringBuilder str = new StringBuilder("");
 		a.setNum(10);
-		str.append("The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins\n");
+		str.append("  The viral genome takes over the host cell's machinery to replicate its genetic material and express viral proteins\n");
 		return str.toString();
 	}
 	
 	public String assemble() {
 		StringBuilder str = new StringBuilder("");
 		c.setNum(10);
-		str.append("New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins\n");
+		str.append("  New viral particles (consists of Acid Nucleic and Capsid) are created by the synthesized viral proteins\n");
 		return str.toString();
 
 	}
@@ -83,7 +83,7 @@ public abstract class Virus {
 	
 	public String infectToNewCells() {
 		StringBuilder str = new StringBuilder("");
-		str.append("Newly created virus will repeat the infecting process with other cells in the body\n");
+		str.append("  Newly created virus will repeat the infecting process with other cells in the body\n");
 		return str.toString();
 	}
 	
@@ -93,9 +93,9 @@ public abstract class Virus {
 	public String displayInformation(Virus virus) {
 		
 		StringBuilder str = new StringBuilder("");
-		str.append("It is the virus responsible for ");
+		str.append("  It is the virus responsible for ");
 		str.append(virus.getDisease());
-		str.append(".\nIt was first identified in ");
+		str.append(".\n  It was first identified in ");
 		str.append(virus.getYear());
 		str.append(" in ");
 		str.append(virus.getOrigin() + ".\n");

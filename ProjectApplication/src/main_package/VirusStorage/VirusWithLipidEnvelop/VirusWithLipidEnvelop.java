@@ -37,16 +37,16 @@ public abstract class VirusWithLipidEnvelop extends Virus{
 
 	public String attachToHostCell() {
 		StringBuilder str = new StringBuilder("");
-		str.append("Viruses with Lipid envelop have Glycoprotein spikes that attach to host cell's receptors\n");
+		str.append("  Viruses with Lipid envelop have Glycoprotein spikes that attach to host cell's receptors\n");
 		return str.toString();
 	}
 	
 	public String entryIntoHostCell() {
 		StringBuilder str = new StringBuilder("");
-		str.append("Virus's envelop fuses with host cell's membrane through endocytosis (a process which a cell absorbs external material by engulfing it with the cell's membrane\n");
+		str.append("  Virus's envelop fuses with host cell's membrane through endocytosis (a process which a cell absorbs external material by engulfing it with the cell's membrane\n");
 		g.setNum(0);
 		l.setNum(0);
-		str.append("Capsid and Acid Nucleic of virus release inside the host cell\n");
+		str.append("  Capsid and Acid Nucleic of virus release inside the host cell\n");
 		str.append("Virus's Acid Nucleic seperates from Capsid and incorporates into host cell's genetic material\n");
 		c.setNum(0);
 		return str.toString();
@@ -62,8 +62,8 @@ public abstract class VirusWithLipidEnvelop extends Virus{
 		StringBuilder str = new StringBuilder("");
 		l.setNum(10);
 		g.setNum(10);
-		str.append("Newly created virus emerge form the host cell.\n");
-		str.append("Some viruses with Lipid envelop retain parts of the host cell's membrane, forming an envelop around the virus. This envelop gives some protection to the virus from the immune system of the host organism.\n");
+		str.append("  Newly created virus emerge form the host cell.\n");
+		str.append("  Some viruses with Lipid envelop retain parts of the host cell's membrane, forming an envelop around the virus. This envelop gives some protection to the virus from the immune system of the host organism.\n");
 		return str.toString();
 	}
 	

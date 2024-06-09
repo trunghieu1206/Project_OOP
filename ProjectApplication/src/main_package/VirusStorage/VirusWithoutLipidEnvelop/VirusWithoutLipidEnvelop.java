@@ -14,13 +14,13 @@ public abstract class VirusWithoutLipidEnvelop extends Virus {
 	
 	public String attachToHostCell() {
 		StringBuilder str = new StringBuilder("");
-		str.append("Viruses without lipid envelop does not fuse with the host cell's membrane, instead they are absorbed directly into the host cell through endocytosis.\nThis creates a new vesicle consists of the virus Acid Nucleic, Capsid and an envelop made up of the host cell's membrane\n");
+		str.append("  Viruses without lipid envelop does not fuse with the host cell's membrane, instead they are absorbed directly into the host cell through endocytosis.\n  This creates a new vesicle consists of the virus Acid Nucleic, Capsid and an envelop made up of the host cell's membrane\n");
 		return str.toString();
 	}
 	
 	public String entryIntoHostCell() {
 		StringBuilder str = new StringBuilder("");
-		str.append("After the newly created vesicle is engulfed into the host cell, the viral Acid Nucleic is released and separated from the Capsid\n");
+		str.append("  After the newly created vesicle is engulfed into the host cell, the viral Acid Nucleic is released and separated from the Capsid\n");
 		c.setNum(0);
 		return str.toString();
 
@@ -32,7 +32,7 @@ public abstract class VirusWithoutLipidEnvelop extends Virus {
 	
 	public String release() {
 		StringBuilder str = new StringBuilder("");
-		str.append("Newly created viruses, which only consist of Acid Nucleic and Capsid, emerge from the host cell\n");
+		str.append("  Newly created viruses, which only consist of Acid Nucleic and Capsid, emerge from the host cell\n");
 		return str.toString();
 
 	}
