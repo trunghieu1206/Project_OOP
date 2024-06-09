@@ -28,7 +28,7 @@ public class ShowStructureVirusController {
     public void setData() {
     	virusStructure.setText(this.virus.displayStructure(virus));
     	if(this.virus instanceof HIV) {
-    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/Hiv_struct_icon.png"));
+    		Image viruStruct = new Image(getClass().getResourceAsStream("../image/Hiv_stuct_icon.png"));
         	virusStructureImage.setImage(viruStruct);
     	}
     	else if(this.virus instanceof SarsCov2) {

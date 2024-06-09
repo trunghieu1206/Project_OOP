@@ -42,7 +42,7 @@ public class ShowInfectionVirusController {
     		    		infectionStepImage.setImage(img);
     		    	}
     				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
-    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelop/Step2_fin.png"));
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step2_fin.png"));
     					infectionStepImage.setImage(img);
     				}
     				stepCnt=stepCnt+1;
@@ -101,7 +101,7 @@ public class ShowInfectionVirusController {
     		    		infectionStepImage.setImage(img);
     				}
     				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
-    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelop/Step1.png"));
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step1.png"));
     					infectionStepImage.setImage(img);
     				}
     				stepCnt--;
@@ -116,7 +116,7 @@ public class ShowInfectionVirusController {
     		    		infectionStepImage.setImage(img);
     				}
     				else if (this.virus instanceof VirusWithoutLipidEnvelop) {
-    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelop/Step2_fin.png"));
+    					Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step2_fin.png"));
     					infectionStepImage.setImage(img);
     				}
     				stepCnt--;
@@ -163,7 +163,7 @@ public class ShowInfectionVirusController {
     		infectionStepImage.setImage(img);
     	}
     	else if (this.virus instanceof VirusWithoutLipidEnvelop) {
-			Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelop/Step1.png"));
+			Image img = new Image(getClass().getResourceAsStream("../image/infection process virus without lipid envelope/Step1.png"));
 			infectionStepImage.setImage(img);
     	}
     }

@@ -8,13 +8,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class HelpMenuController {
 	@FXML
 	private BorderPane borderPane;
+	
+	@FXML
+	private Label titleLabel;
 	
 	@FXML
 	void initialize(ActionEvent event) {
@@ -31,6 +38,10 @@ public class HelpMenuController {
         	HelpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
+        	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,46);
+        	titleLabel.setText("AIMS");
+        	titleLabel.setFont(font);
         	
         	
     	} catch(IOException e) {
@@ -51,6 +62,7 @@ public class HelpMenuController {
             stage.setScene(new Scene(root));
             stage.setTitle("Main Screen");
             stage.show();
+            
         }
         catch(IOException e){
             e.printStackTrace();
@@ -72,7 +84,9 @@ public class HelpMenuController {
         	HelpAimController.setContent();
         	
         	borderPane.setCenter(anchorPane);
-        	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,46);
+        	titleLabel.setText("AIMS");
+        	titleLabel.setFont(font);
         	
     	} catch(IOException e) {
     		e.printStackTrace();
@@ -95,6 +109,9 @@ public class HelpMenuController {
         	
         	borderPane.setCenter(anchorPane);
         	
+        	Font font = Font.font("Segoe UI",FontWeight.BOLD,FontPosture.REGULAR,41);
+        	titleLabel.setText("Basic Usage");
+        	titleLabel.setFont(font);
         	
     	} catch(IOException e) {
     		e.printStackTrace();
