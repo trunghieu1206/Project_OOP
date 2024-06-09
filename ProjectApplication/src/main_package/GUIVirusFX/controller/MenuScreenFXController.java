@@ -24,7 +24,7 @@ public class MenuScreenFXController {
             
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Choose Type of Virus");
+            stage.setTitle("Help");
             stage.show();
         }
         catch(IOException e){

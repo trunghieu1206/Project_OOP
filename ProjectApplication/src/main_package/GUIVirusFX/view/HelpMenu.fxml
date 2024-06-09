@@ -76,7 +76,7 @@
             <Pane prefHeight="81.0" prefWidth="1024.0">
                <children>
                   <Pane layoutX="288.0" layoutY="-172.0" prefHeight="268.0" prefWidth="439.0" rotate="23.2" style="-fx-background-color: #fa2c56; -fx-background-radius: 50;" />
-                  <Label fx:id="titleLabel" layoutX="421.0" layoutY="7.0" text="HELP MENU" textFill="WHITE">
+                  <Label fx:id="titleLabel" alignment="TOP_CENTER" layoutX="421.0" layoutY="7.0" text="HELP MENU" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="41.0" />
                      </font>

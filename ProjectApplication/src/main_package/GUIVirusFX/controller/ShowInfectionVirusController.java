@@ -80,6 +80,8 @@ public class ShowInfectionVirusController {
     			
     				stepNumber.setText("Step 6");
     				infectionMechanism.setText(this.virus.infectToNewCells());
+    				Image img = new Image(getClass().getResourceAsStream("../image/infection process  virus with lipid envelop/fin/step6(infect_to_new_cell).jpg"));
+		    		infectionStepImage.setImage(img);
     				stepCnt++;
     			
     		}
