@@ -17,7 +17,7 @@ Our application aims to provide valuable information about some of the most comm
 To use our application please clone branch _master_ in our repository and run _ProjectApplication/src/main_package/GUIVirusFX/MainFX.java_
 
 ## Demo
-The demo for our application can be viewed [here](https://drive.google.com/drive/folders/13qidO8ulJsJCvyqtr1m-AbntjHekuzLM)
+The demo for our application can be viewed [here](https://drive.google.com/file/d/1XJ-5KvXMwJ6JHsXgG7kCtWlZP3l23rHz/view?usp=sharing)
 
 ## Team members
 | Member name       | Student ID    |
