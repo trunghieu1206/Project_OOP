@@ -7,9 +7,9 @@ Our application aims to provide valuable information about some of the most comm
 ## Team members
 | Member name       | Student ID    | Responsibility |
 | -------------     | ------------- | -------------  |
-| Hoang Trung Hieu  | 20226039      | Researching virus details, designing diagrams, application logic processing, auditing team members' code
+| Hoang Trung Hieu  | 20226039      | Researching virus details, designing diagrams, application logic processing |
 | Vu Nguyen Hao     | 20226037      | Designing User Interface |
-| Ngo Minh Duc      | 20226028      | Researching virus details, designing diagrams, application logic processing,
+| Ngo Minh Duc      | 20226028      | Researching virus details, designing diagrams, application logic processing |
 | Tran Tung Duong   | 20226033      | Designing User Interface, writing documents |
 
 Every member contributes the same amount of work in this project
