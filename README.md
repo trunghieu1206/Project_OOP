@@ -18,6 +18,7 @@ Every member contributes the same amount of work in this project
 - **ProjectApplication/Requirement** : Include use case diagram
 - **ProjectApplication/src**: Include all source code
 - **Usage.docx**: Application usage guide
+- **Slides.pptx**: Slides
 
 ## Requirements
 - **Environment**: Java Development Kit (JDK), JavaFX Runtime, IDE (Eclipse is recommended)
