@@ -19,6 +19,7 @@ Every member contributes the same amount of work in this project
 - **ProjectApplication/src**: Include all source code
 - **Usage.docx**: Application usage guide
 - **Slides.pptx**: Slides
+- **Project-report.docx**: Documented report
 
 ## Requirements
 - **Environment**: Java Development Kit (JDK), JavaFX Runtime, IDE (Eclipse is recommended)
